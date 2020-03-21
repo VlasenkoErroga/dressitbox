@@ -1,0 +1,140 @@
+.footer {
+
+    max-width: 1230px;
+    margin: 0 auto;
+    &-content {
+        border-top: 1px solid $black;
+        display: flex;
+        align-items: flex-start;
+        padding: 60px 0;
+
+        @media(max-width:768px){
+            flex-direction: column;
+        }
+    }
+
+    &-menu{
+        display: flex;
+        width: 100%;
+        @media(max-width:768px){
+            order: 2;
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        min-width: 400px;
+
+        @media(max-width:768px){
+            order: 1;
+            min-width: 100%;
+            margin-bottom: 30px;
+
+            & form{
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        & form {
+            display: flex;
+        }
+
+        &__title {
+            width: 100%;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+            color: $black;
+            margin-bottom: 38px;
+
+            & span {
+                color: $ping;
+            }
+
+            @media(max-width:768px){
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        &__input {
+            border: none;
+            border-radius: 50px;
+            padding: 15px 30px;
+            @extend .btn;
+            background-color: $inputcolor;
+            font-family: Montserrat;
+            margin-right: 7px;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            max-width: 254px;
+            width: 100%;
+        }
+
+        &__btn {
+            width: 100%;
+            max-width: 128px;
+        }
+
+    }
+
+    &-nav {
+        width: 100%;
+
+        @media(max-width:992px){
+            &.quick{
+                display: none;
+            }
+        }
+
+        @media(max-width:768px){
+            // &.help{
+            //     display: none;
+            // }
+        }
+
+        &__title {
+            display: flex;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+            color: $black;
+            margin-bottom: 38px;
+        }
+
+        &__item {
+            list-style: none;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+
+        }
+
+        &__list {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $grey;
+            
+        }
+
+        &__link {
+            margin: 0;
+            padding: 0;
+            transition:all .3s ease-in-out;
+
+            &:hover{
+                transition:all .3s ease-in-out;
+                color: $ping;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<% var data = {
+  title: "Dressitbox",
+  author: "Vlasenko$"
+}; %>
+
+<%= _.template(require('./../includes/head.html').default)(data) %>
+<body>
+  
+
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<!-- Main -->
+<main>
+  <%= _.template(require('./../includes/_main-menu.html').default)(data) %>
+  <%= _.template(require('./../includes/_how.html').default)(data) %>
+  <%= _.template(require('./../includes/_product-line.html').default)(data) %>
+  <%= _.template(require('./../includes/_benefits.html').default)(data) %>
+  <%= _.template(require('./../includes/_product-line__inta.html').default)(data) %>
+</main>
+
+      <!-- Main end -->
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+<%= _.template(require('./../includes/scripts.html').default)(data) %>
+</body>
+</html>

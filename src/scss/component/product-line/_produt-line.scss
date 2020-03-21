@@ -1,0 +1,128 @@
+.product {
+    max-width: 225px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    &-slider {
+        @extend .owl-carousel;
+        max-width: 1200px;
+        margin: 58px auto 0;
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__follow {
+            display: flex;
+            height: 75px;
+            font-size: 30px;
+            line-height:150%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__arrow {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            border-radius: 50%;
+            position: absolute;
+            font-size: 0;
+            z-index: 2;
+            top: 30%;
+            border: 1px solid $black;
+            background: url("./../img/slide/arrow.svg") center center no-repeat;
+            background-size: 15%;
+            background-color: $white;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: url("./../img/slide/arrow-wh.svg") center center no-repeat;
+                background-size: 15%;
+                background-color: $black;
+            }
+        }
+
+        &__next {
+            right: 15px;
+
+            @media(min-width: 1300px) {
+                right: -35px;
+            }
+        }
+
+        &__prev {
+            transform: scale(-1);
+
+            @media(min-width: 1300px) {
+                left: -35px;
+            }
+        }
+    }
+
+    &-all-cat {
+        &.btn {
+            margin-top: 30px;
+            max-width: 100%;
+        }
+    }
+
+    &-imd {
+        width: 100%;
+    }
+
+    &-title {
+        font-size: 17px;
+        line-height: 21px;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        min-height: 30px;
+        padding: 0 10px;
+    }
+
+    &-category {
+        color: $pink;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0 10px;
+        height: 30px;
+    }
+
+    &-pice {
+        height: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        padding: 0 10px;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+
+        &:before {
+            content: '€';
+        }
+    }
+
+}
+
+.instagram {
+    & .product-slider__arrow {
+        top: 50%!important;
+    }
+}

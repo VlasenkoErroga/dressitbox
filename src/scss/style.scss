@@ -1,0 +1,21 @@
+@import './base/variables';
+@import './base/font';
+@import '~owl.carousel/dist/assets/owl.carousel';
+
+//Base
+@import './base/bootstrap';
+@import './global';
+@import './base/typography';
+@import './base/animation';
+@import './base/button';
+@import './base/links';
+
+//module
+@import './component/header/header';
+@import './component/main-slider/main-slider';
+@import './component/footer/footer';
+@import './component/footer/copyright';
+@import './component/section-main/section-main';
+@import './component/product-line/produt-line';
+
+

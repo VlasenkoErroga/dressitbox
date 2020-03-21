@@ -1,0 +1,29 @@
+a {
+    color: inherit;
+    text-decoration: inherit;
+    transition: all .3s ease-in-out;
+
+    &:link {
+        color: inherit;
+        text-decoration: inherit;
+        transition: all .3s ease-in-out;
+    }
+
+    &:visited {
+        color: inherit;
+        text-decoration: inherit;
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+        color: inherit;
+        text-decoration: inherit;
+        transition: all .3s ease-in-out;
+    }
+
+    &:active {
+        color: inherit;
+        text-decoration: inherit;
+        transition: all .3s ease-in-out;
+    }
+}

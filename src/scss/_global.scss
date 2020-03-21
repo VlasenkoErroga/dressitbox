@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+html,
+body {
+    height: 100%;
+    font: 400 16px/18px 'Montserrat', sans-serif;
+}
+
+body{
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+header {
+	flex: 1 0 auto;
+}
+main{
+    flex: 1 0 auto; 
+}
+footer {
+	flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1442px;
+}
+
+section{
+    max-width: 1230px;
+    margin: 0 auto;
+}
